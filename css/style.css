@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -85,6 +89,7 @@ body {
 .film {
   padding-top: 80px;
   padding-bottom: 80px;
+  border-bottom: 1px solid #D4D4D4;
 }
 
 .film-trailer {
@@ -165,4 +170,100 @@ body {
 
 .left-side {
   margin-right: 40px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.film-rating-counter {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #5671F6;
+  margin-right: 28px;
+}
+
+.rating-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.rating-text {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rating-text-bold {
+  font-weight: 700;
+}
+
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  color: #A5A5A5;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 30px;
+}
+
+.section-title.active {
+  color: #363636;
+  font-weight: 900;
+}
+
+.tabs-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  color: #5671F6;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.en-name {
+  color: #A5A5A5;
 }
