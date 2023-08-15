@@ -8,13 +8,23 @@ body {
   color: #363636;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 104px;
   padding-left: 34px;
   border-bottom: 1px solid #D4D4D4;
+}
+
+.m-menu {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
 }
 
 .header-logo {
@@ -150,6 +160,8 @@ body {
   padding-bottom: 25px;
   padding-top: 25px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .trailer-button-icon {
@@ -451,6 +463,64 @@ body {
     height: 80px;
   }
 
+  .m-menu {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 68px;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 68px);
+    background: #5671F6;
+  }
+
+  .m-menu.active {
+    display: flex;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .button-group {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 260px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-image: none;
+    margin: 0;
+  }
+
+  .navigation-link {
+    color: #fff;
+    margin-bottom: 18px;
+    margin-right: 0;
+  }
+
+  .navigation-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .sign-up {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-bottom: 30px;
+  }
+
   .film {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -477,17 +547,10 @@ body {
 
   .mobile-buttons {
     display: block;
-  }
-
-  .button-group {
-    display: none;
+    margin-left: auto;
   }
 
   .header-logo:after {
-    display: none;
-  }
-
-  .search-input {
     display: none;
   }
 

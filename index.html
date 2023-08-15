@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,21 +17,24 @@
         <!-- /.logo -->
         <div class="header-logo"></div>
         <!-- /.line -->
-        <input type="text" class="search-input"
-            placeholder="Поиск по фильмам...">
-        <!-- search-input -->
-        <nav class="navigation">
-            <a href="#" class="navigation-link">Фильмы</a>
-            <a href="#" class="navigation-link">ТВ</a>
-            <a href="#" class="navigation-link">Новости</a>
-            <a href="#" class="navigation-link">О сервисе</a>
-        </nav>
-        <!-- /.navigation -->
-        <div class="button-group">
-            <button class="button sign-up">Регистрация</button>
-            <button class="button login">Войти</button>
+        <div class="m-menu">
+            <input type="text" class="search-input"
+                placeholder="Поиск по фильмам...">
+            <!-- search-input -->
+            <nav class="navigation">
+                <a href="#" class="navigation-link">Фильмы</a>
+                <a href="#" class="navigation-link">ТВ</a>
+                <a href="#" class="navigation-link">Новости</a>
+                <a href="#" class="navigation-link">О сервисе</a>
+            </nav>
+            <!-- /.navigation -->
+            <div class="button-group">
+                <button class="button sign-up">Регистрация</button>
+                <button class="button login">Войти</button>
+            </div>
+            <!-- /.button-group -->
         </div>
-        <!-- /.button-group -->
+        <!-- /.m-menu -->
         <div class="mobile-buttons">
             <button class="search-button"><img src="img/search-icon.svg"
                     alt="Search icon"></button>
@@ -48,12 +52,14 @@
             <div class="film-wrapper">
                 <div class="film-trailer">
                     <img src="img/poster.jpg" alt="Poster" class="poster">
-                    <button class="trailer-button">
+                    <a data-fancybox
+                        href="https://www.youtube.com/watch?v=o705uydkgew&ab_channel=iVideos"
+                        class="trailer-button">
                         <img class="trailer-button-icon" src="img/play.svg"
                             alt="Play">
                         <span class="trailer-button-text">Посмотреть
                             трейлер</span>
-                    </button>
+                    </a>
                 </div>
                 <!-- /.film-trailer -->
                 <div class="film-text">
@@ -272,6 +278,8 @@
         <!-- /.container -->
     </section>
     <!-- /.news -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
