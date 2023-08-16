@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(this).toggleClass("active");
     let activeTabContent = $(this).attr("data-target");
     $(".tabs-content").removeClass("visible");
-    $(activeTabContent).addClass("visible");
+    $(activeTabContent).toggleClass("visible");
   });
 
   const swiper = new Swiper(".swiper-container", {
